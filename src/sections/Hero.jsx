@@ -11,8 +11,8 @@ function Hero() {
                 Bhencyris John Sagaral
             </h1>
             {/* Role / Subheading */}
-            <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-blue-500 mt-2">
-                Backend Systems
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-blue-500 mt-2">
+                Backend Developer
             </h2>
             {/* Tech Stack Badges (Rendered with React .map) */}
             <div className="flex flex-wrap gap-2 mt-6">
