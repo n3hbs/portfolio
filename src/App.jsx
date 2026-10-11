@@ -2,6 +2,7 @@ import "./App.css";
 import Hero from "./sections/Hero.jsx";
 import Bio from "./sections/Bio.jsx";
 import Projects from "./sections/Projects.jsx";
+import Contact from "./sections/Contact.jsx";
 import { Analytics } from "@vercel/analytics/react";
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Bio />
         <hr className="border-t border-zinc-800 my-10 sm:my-12" />
         <Projects />
+        <hr className="border-t border-zinc-800 my-10 sm:my-12" />
+        <Contact />
       </main>
     </div>
   );
