@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import { projects } from '../data/projects'
-import { ExternalLink, ChevronDown } from 'lucide-react'
-import { Github } from '../components/common/Icons'
+import { useState } from "react";
+import { projects } from "../data/projects";
+import { ExternalLink, ChevronDown } from "lucide-react";
+import { Github } from "../components/common/Icons";
 
 function ProjectCard({ project }) {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="group bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden hover:border-zinc-700 hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-0.5 transition-all duration-300 ease-out flex flex-col justify-between">
@@ -56,11 +56,11 @@ function ProjectCard({ project }) {
                 className="inline-flex items-center gap-1.5 text-xs font-mono text-zinc-400 hover:text-zinc-200 transition-colors duration-200 cursor-pointer select-none"
                 aria-expanded={isOpen}
               >
-                <span>{isOpen ? 'Hide description' : 'View description'}</span>
+                <span>{isOpen ? "Hide description" : "View description"}</span>
                 <ChevronDown
                   size={14}
                   className={`text-zinc-500 transition-transform duration-300 ease-in-out ${
-                    isOpen ? 'rotate-180 text-blue-400' : ''
+                    isOpen ? "rotate-180 text-blue-400" : ""
                   }`}
                 />
               </button>
@@ -69,8 +69,8 @@ function ProjectCard({ project }) {
               <div
                 className={`grid transition-all duration-300 ease-in-out ${
                   isOpen
-                    ? 'grid-rows-[1fr] opacity-100 mt-2'
-                    : 'grid-rows-[0fr] opacity-0 pointer-events-none mt-0'
+                    ? "grid-rows-[1fr] opacity-100 mt-2"
+                    : "grid-rows-[0fr] opacity-0 pointer-events-none mt-0"
                 }`}
               >
                 <div className="overflow-hidden">
@@ -88,7 +88,7 @@ function ProjectCard({ project }) {
 
           {/* Tech Stack */}
           <div>
-            <span className="block text-[11px] font-semibold tracking-wider text-zinc-500 uppercase font-mono mb-2">
+            <span className="block text-xs font-semibold tracking-wider text-zinc-500 uppercase font-mono mb-2">
               Tech Stack
             </span>
             <div className="flex flex-wrap gap-1.5">
@@ -127,14 +127,14 @@ function ProjectCard({ project }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default function Projects() {
   return (
     <section id="projects" className="py-10 px-4 text-left">
-      <span className="text-sm font-semibold tracking-wider text-zinc-500 uppercase font-mono">
-        Featured Work
+      <span className="text-sm font-semibold tracking-wider text-zinc-500 uppercase">
+        Route::get('/projects')
       </span>
       <h2 className="text-3xl font-bold tracking-tight text-zinc-100 mt-1 mb-8">
         Projects
@@ -147,5 +147,5 @@ export default function Projects() {
         ))}
       </div>
     </section>
-  )
+  );
 }
